@@ -1,0 +1,19 @@
+{
+  "posts": [
+    { "id": 1, "title": "Post 1" },
+    { "id": 2, "title": "Post 2" },
+    { "id": 3, "title": "Post 3" }
+  ],
+  "disk": [
+    { "name": "/dev/sda1", "stats": "0 / 4G", "used": 45 },
+    { "name": "/dev/sda2", "stats": "0 / 4G", "used": 45 },
+    { "name": "/dev/sdb1", "stats": "0 / 4G", "used": 45 }
+  ],
+  "comments": [
+    { "id": 1, "body": "some comment", "postId": 1 },
+    { "id": 2, "body": "some comment", "postId": 1 }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}
