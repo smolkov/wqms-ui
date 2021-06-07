@@ -1,0 +1,17 @@
+{
+  "system": {
+    "host": "host",
+    "os": "Ubuntu 16.04.2 LTS 4.4.0-77-generic",
+    "uptime": "5 hours and 32 minutes and 27 seconds"
+  },
+  "posts": [
+    { "id": 1, "title": "Post 1" },
+    { "id": 2, "title": "Post 2" },
+    { "id": 3, "title": "Post 3" }
+  ],
+  "disk": [
+    { "name": "/dev/sda1", "stats": "0 / 4G", "used": 45 },
+    { "name": "/dev/sda2", "stats": "0 / 4G", "used": 45 },
+    { "name": "/dev/sdb1", "stats": "0 / 4G", "used": 45 }
+  ]
+}

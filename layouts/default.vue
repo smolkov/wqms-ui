@@ -81,9 +81,11 @@
       <versions />
       <v-spacer />
       <language />
-      <v-btn icon @click.stop="rightDrawer = !rightDrawer">
-        <v-icon>mdi-menu</v-icon>
-      </v-btn>
+      <v-badge color="green" overlap :content="events">
+        <v-btn icon @click.stop="rightDrawer = !rightDrawer">
+          <v-icon>mdi-menu</v-icon>
+        </v-btn>
+      </v-badge>
     </v-app-bar>
     <v-main>
       <v-container>
@@ -123,6 +125,7 @@ export default {
       clipped: false,
       drawer: false,
       fixed: false,
+      notification:8,
       items: [
         {
           icon: 'mdi-apps',
@@ -162,7 +165,6 @@ export default {
               icon: 'mdi-account-supervisor',
               title: 'User',
               to: '/system/user',
-
             },
             {
               title: 'Wifi',
@@ -199,6 +201,8 @@ export default {
   computed: {
     ...mapState({
       appName: (state) => state.app.name,
+      events: (state) => state.event.count,
+
     }),
   },
 }
